@@ -1,6 +1,5 @@
-version: '3'
+version: "3"
 services:
-
   client-prod:
     build:
       context: ./client
@@ -11,6 +10,15 @@ services:
       - server-prod
     volumes_from:
       - server-prod:ro
+
+  db-prod:
+    image: postgres:13.2-alpine
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=todo-prod
+    ports:
+      - "5432:5432"
 
   server-prod:
     build:
@@ -25,15 +33,6 @@ services:
       - mongo-prod
     volumes:
       - /var/www/html/images:/var/www/html/images
-
-  db-prod:
-    image: postgres:13.2-alpine
-    environment:
-      - POSTGRES_PASSWORD=password
-      - POSTGRES_USER=postgres
-      - POSTGRES_DB=todo-prod
-    ports:
-      - "5432:5432"
 
   mongo-prod:
     image: mongo:4.4.6-bionic
