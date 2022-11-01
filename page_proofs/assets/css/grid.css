@@ -100,7 +100,7 @@
   max-width: var(--size-col);
 }
 
-/* @media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) {
   .block-sm {
     display: block;
   }
@@ -436,4 +436,4 @@
     flex-basis: var(--size-col);
     max-width: var(--size-col);
   }
-} */
+}

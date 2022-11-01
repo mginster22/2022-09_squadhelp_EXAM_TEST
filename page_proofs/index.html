@@ -13,11 +13,15 @@
   <link rel="stylesheet" href="./assets/css/grid.css" />
   <link rel="stylesheet" href="./assets/css/header.css" />
   <link rel="stylesheet" href="./assets/css/nav_menu.css" />
+  <link rel="stylesheet" href="./assets/css/info.css" />
+  <link rel="stylesheet" href="./assets/css/services.css" />
+  <link rel="stylesheet" href="./assets/css/how_do_naming.css" />
   <title>Document</title>
 </head>
 
 <body>
-  <header class="header">
+  <!-- HEADER -->
+  <header class="header" id="header">
     <div class="container  header_inner">
       <img src="./assets/images/logo_white.svg" />
       <div class="search_wrapper ">
@@ -140,35 +144,39 @@
       </div>
     </div>
   </header>
+
+  <!-- NAVBAR -->
   <nav class="nav ">
     <ul class="nav_menu container">
       <li class="nav_menu_item">
-        <a href="#" class="nav_link_item">Names For Sale</a>
-        <svg class="nav_arrow_up" width="10" height="10">
-          <g clip-path="url(#clip0)">
-            <path
-              d="M.114 7.414a.39.39 0 00.553 0l4.057-4.048a.391.391 0 01.553 0l4.056 4.049a.39.39 0 10.552-.553L5.83 2.814a1.168 1.168 0 00-.83-.343c-.3 0-.6.114-.827.342L.115 6.862a.39.39 0 000 .552z">
-            </path>
-          </g>
-          <defs>
-            <clipPath id="clip0">
-              <path transform="rotate(180 5 5)" d="M0 0h10v10H0z"></path>
-            </clipPath>
-          </defs>
-        </svg>
-        <svg class="nav_arrow_down" width="10" height="10">
-          <g clip-path="url(#clip0)">
-            <path
-              d="M9.886 2.586a.39.39 0 00-.553 0L5.276 6.633a.391.391 0 01-.553 0L.667 2.585a.39.39 0 10-.552.553L4.17 7.186c.229.229.529.343.83.343.3 0 .6-.114.827-.342l4.057-4.049a.39.39 0 000-.552z">
-            </path>
-          </g>
-          <defs>
-            <clipPath id="clip0">
-              <path d="M0 0h10v10H0z"></path>
-            </clipPath>
-          </defs>
-        </svg>
-        <ul class="sub_nav_menu_list">
+        <div class="nav_menu_item_inner">
+          <a href="#" class="nav_link_item">Names For Sale</a>
+          <svg class="nav_arrow_up" width="10" height="10">
+            <g clip-path="url(#clip0)">
+              <path
+                d="M.114 7.414a.39.39 0 00.553 0l4.057-4.048a.391.391 0 01.553 0l4.056 4.049a.39.39 0 10.552-.553L5.83 2.814a1.168 1.168 0 00-.83-.343c-.3 0-.6.114-.827.342L.115 6.862a.39.39 0 000 .552z">
+              </path>
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <path transform="rotate(180 5 5)" d="M0 0h10v10H0z"></path>
+              </clipPath>
+            </defs>
+          </svg>
+          <svg class="nav_arrow_down" width="10" height="10">
+            <g clip-path="url(#clip0)">
+              <path
+                d="M9.886 2.586a.39.39 0 00-.553 0L5.276 6.633a.391.391 0 01-.553 0L.667 2.585a.39.39 0 10-.552.553L4.17 7.186c.229.229.529.343.83.343.3 0 .6-.114.827-.342l4.057-4.049a.39.39 0 000-.552z">
+              </path>
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <path d="M0 0h10v10H0z"></path>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <ul class="sub_nav_menu_list ">
           <li class="sub_nav_menu_list_item">
             <a href="#">Popular Brandable Names</a>
           </li>
@@ -195,31 +203,33 @@
         </ul>
       </li>
       <li class="nav_menu_item">
-        <a href="#" class="nav_link_item">Naming Contests</a>
-        <svg class="nav_arrow_up" width="10" height="10">
-          <g clip-path="url(#clip0)">
-            <path
-              d="M.114 7.414a.39.39 0 00.553 0l4.057-4.048a.391.391 0 01.553 0l4.056 4.049a.39.39 0 10.552-.553L5.83 2.814a1.168 1.168 0 00-.83-.343c-.3 0-.6.114-.827.342L.115 6.862a.39.39 0 000 .552z">
-            </path>
-          </g>
-          <defs>
-            <clipPath id="clip0">
-              <path transform="rotate(180 5 5)" d="M0 0h10v10H0z"></path>
-            </clipPath>
-          </defs>
-        </svg>
-        <svg class="nav_arrow_down" width="10" height="10">
-          <g clip-path="url(#clip0)">
-            <path
-              d="M9.886 2.586a.39.39 0 00-.553 0L5.276 6.633a.391.391 0 01-.553 0L.667 2.585a.39.39 0 10-.552.553L4.17 7.186c.229.229.529.343.83.343.3 0 .6-.114.827-.342l4.057-4.049a.39.39 0 000-.552z">
-            </path>
-          </g>
-          <defs>
-            <clipPath id="clip0">
-              <path d="M0 0h10v10H0z"></path>
-            </clipPath>
-          </defs>
-        </svg>
+        <div class='nav_menu_item_inner'>
+          <a href="#" class="nav_link_item">Naming Contests</a>
+          <svg class="nav_arrow_up" width="10" height="10">
+            <g clip-path="url(#clip0)">
+              <path
+                d="M.114 7.414a.39.39 0 00.553 0l4.057-4.048a.391.391 0 01.553 0l4.056 4.049a.39.39 0 10.552-.553L5.83 2.814a1.168 1.168 0 00-.83-.343c-.3 0-.6.114-.827.342L.115 6.862a.39.39 0 000 .552z">
+              </path>
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <path transform="rotate(180 5 5)" d="M0 0h10v10H0z"></path>
+              </clipPath>
+            </defs>
+          </svg>
+          <svg class="nav_arrow_down" width="10" height="10">
+            <g clip-path="url(#clip0)">
+              <path
+                d="M9.886 2.586a.39.39 0 00-.553 0L5.276 6.633a.391.391 0 01-.553 0L.667 2.585a.39.39 0 10-.552.553L4.17 7.186c.229.229.529.343.83.343.3 0 .6-.114.827-.342l4.057-4.049a.39.39 0 000-.552z">
+              </path>
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <path d="M0 0h10v10H0z"></path>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
         <ul class="sub_nav_menu_list">
           <li class="sub_nav_menu_list_item">
             <a href="#">Start A Contest</a>
@@ -243,65 +253,171 @@
         </ul>
       </li>
       <li class="nav_menu_item">
-        <a href="#" class="nav_link_item">Other Services</a>
-        <svg class="nav_arrow_up" width="10" height="10">
-          <g clip-path="url(#clip0)">
-            <path
-              d="M.114 7.414a.39.39 0 00.553 0l4.057-4.048a.391.391 0 01.553 0l4.056 4.049a.39.39 0 10.552-.553L5.83 2.814a1.168 1.168 0 00-.83-.343c-.3 0-.6.114-.827.342L.115 6.862a.39.39 0 000 .552z">
-            </path>
-          </g>
-          <defs>
-            <clipPath id="clip0">
-              <path transform="rotate(180 5 5)" d="M0 0h10v10H0z"></path>
-            </clipPath>
-          </defs>
-        </svg>
-        <svg class="nav_arrow_down" width="10" height="10">
-          <g clip-path="url(#clip0)">
-            <path
-              d="M9.886 2.586a.39.39 0 00-.553 0L5.276 6.633a.391.391 0 01-.553 0L.667 2.585a.39.39 0 10-.552.553L4.17 7.186c.229.229.529.343.83.343.3 0 .6-.114.827-.342l4.057-4.049a.39.39 0 000-.552z">
-            </path>
-          </g>
-          <defs>
-            <clipPath id="clip0">
-              <path d="M0 0h10v10H0z"></path>
-            </clipPath>
-          </defs>
-        </svg>
+        <div class="nav_menu_item_inner">
+          <a href="#" class="nav_link_item">Other Services</a>
+          <svg class="nav_arrow_up" width="10" height="10">
+            <g clip-path="url(#clip0)">
+              <path
+                d="M.114 7.414a.39.39 0 00.553 0l4.057-4.048a.391.391 0 01.553 0l4.056 4.049a.39.39 0 10.552-.553L5.83 2.814a1.168 1.168 0 00-.83-.343c-.3 0-.6.114-.827.342L.115 6.862a.39.39 0 000 .552z">
+              </path>
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <path transform="rotate(180 5 5)" d="M0 0h10v10H0z"></path>
+              </clipPath>
+            </defs>
+          </svg>
+          <svg class="nav_arrow_down" width="10" height="10">
+            <g clip-path="url(#clip0)">
+              <path
+                d="M9.886 2.586a.39.39 0 00-.553 0L5.276 6.633a.391.391 0 01-.553 0L.667 2.585a.39.39 0 10-.552.553L4.17 7.186c.229.229.529.343.83.343.3 0 .6-.114.827-.342l4.057-4.049a.39.39 0 000-.552z">
+              </path>
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <path d="M0 0h10v10H0z"></path>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
       </li>
-      <li>
+      <li class="nav_menu_item">
         <a href="#" class="nav_link_item">Agency Experience</a>
       </li>
       <li class="nav_menu_item">
-        <a href="#" class="nav_link_item">Resources</a>
-        <svg class="nav_arrow_up" width="10" height="10">
-          <g clip-path="url(#clip0)">
-            <path
-              d="M.114 7.414a.39.39 0 00.553 0l4.057-4.048a.391.391 0 01.553 0l4.056 4.049a.39.39 0 10.552-.553L5.83 2.814a1.168 1.168 0 00-.83-.343c-.3 0-.6.114-.827.342L.115 6.862a.39.39 0 000 .552z">
-            </path>
-          </g>
-          <defs>
-            <clipPath id="clip0">
-              <path transform="rotate(180 5 5)" d="M0 0h10v10H0z"></path>
-            </clipPath>
-          </defs>
-        </svg>
-        <svg class="nav_arrow_down" width="10" height="10">
-          <g clip-path="url(#clip0)">
-            <path
-              d="M9.886 2.586a.39.39 0 00-.553 0L5.276 6.633a.391.391 0 01-.553 0L.667 2.585a.39.39 0 10-.552.553L4.17 7.186c.229.229.529.343.83.343.3 0 .6-.114.827-.342l4.057-4.049a.39.39 0 000-.552z">
-            </path>
-          </g>
-          <defs>
-            <clipPath id="clip0">
-              <path d="M0 0h10v10H0z"></path>
-            </clipPath>
-          </defs>
-        </svg>
+        <div class="nav_menu_item_inner">
+          <a href="#" class="nav_link_item">Resources</a>
+          <svg class="nav_arrow_up" width="10" height="10">
+            <g clip-path="url(#clip0)">
+              <path
+                d="M.114 7.414a.39.39 0 00.553 0l4.057-4.048a.391.391 0 01.553 0l4.056 4.049a.39.39 0 10.552-.553L5.83 2.814a1.168 1.168 0 00-.83-.343c-.3 0-.6.114-.827.342L.115 6.862a.39.39 0 000 .552z">
+              </path>
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <path transform="rotate(180 5 5)" d="M0 0h10v10H0z"></path>
+              </clipPath>
+            </defs>
+          </svg>
+          <svg class="nav_arrow_down" width="10" height="10">
+            <g clip-path="url(#clip0)">
+              <path
+                d="M9.886 2.586a.39.39 0 00-.553 0L5.276 6.633a.391.391 0 01-.553 0L.667 2.585a.39.39 0 10-.552.553L4.17 7.186c.229.229.529.343.83.343.3 0 .6-.114.827-.342l4.057-4.049a.39.39 0 000-.552z">
+              </path>
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <path d="M0 0h10v10H0z"></path>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
       </li>
     </ul>
   </nav>
+  <!-- INFO SECTION -->
 
+  <section class="container info">
+    <div class="col-7 col-md-12 col-sm-12 info_wrapper">
+      <span class="info_section_span ">World's #1 Naming Platform</span>
+      <h2 class="info_section_title ">How Does Squadhelp Work?</h2>
+      <p class="info_section_text">Squadhelp helps you come up with a great name for your business by combining the
+        power of crowdsourcing with sophisticated technology and Agency-level validation services.</p>
+      <a href="#" class="play_video_link">
+        <span class="info_arrow_right"></span>
+        Play video
+      </a>
+    </div>
+    <div class="info_user_avatar col-6">
+      <img src="'./../assets/images/app-user.svg" />
+    </div>
+  </section>
+  <!-- OUR SERVICE SECTIONS -->
+  <section class="container services">
+    <a class="scroll" href="#header">
+      <span>
+        &#5169;
+      </span>
+    </a>
+    <div class="col-12 services_inner">
+      <div class="services_wrapper">
+        <span class="services_span">Our Services</span>
+        <h3 class="services_title">3 Ways To Use Squadhelp</h3>
+        <p class="services_text">Squadhelp offers 3 ways to get you a perfect name for your business.</p>
+      </div>
+      <div class="article_info ">
+        <article class="col-4 col-md-12 col-sm-12 services_card">
+          <div class="services_item">
+            <img src='./assets/images/services_icon1.svg' class="col-3" />
+            <h3>
+              Launch a Contest
+            </h3>
+            <p>Work with hundreds of creative experts to get custom name suggestions for your business or brand. All
+              names
+              are auto-checked for URL availability.</p>
+          </div>
+
+          <a href="#">Launch a Context</a>
+        </article>
+        <article class="col-4 col-md-12 col-sm-12 services_card">
+          <div class="services_item">
+            <img src='./assets/images/services_icon3.svg' class="col-3" />
+            <h3>
+              Explore Names For Sale
+            </h3>
+            <p>Our branding team has curated thousands of pre-made names that you can purchase instantly. All names
+              include a matching URL and a complimentary Logo Design</p>
+          </div>
+          <a href="#">Explore Names For Sale</a>
+        </article>
+        <article class="col-4 col-md-12 col-sm-12 services_card">
+          <div class="services_item">
+            <img src='./assets/images/services_icon2.svg' class="col-3" />
+            <h3>
+              Launch a Contest
+            </h3>
+            <p>Our Managed contests combine the power of crowdsourcing with the rich experience of our branding
+              consultants. Get a complete agency-level experience at a fraction of Agency costs</p>
+          </div>
+          <a href="#">Learn more</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="how_do_naming">
+    <div class="how_do_naming_wrapper container">
+      <div class="title_how_do">
+        <img class="col-1" src="./assets/images/how_to_icon.svg" />
+        <h4>How Do Naming Contests Work?</h4>
+      </div>
+      <div class="how_do_inner">
+        <img src="./assets/images/how_do_user.svg" class="col-5" />
+        <div class="col-6 how_do_wrapper_block">
+
+          <article class="how_do_article col-12">
+            <span>1.</span>
+            <p>Fill out your Naming Brief and begin receiving name ideas in minutes</p>
+          </article>
+          <article class="how_do_article col-12">
+            <span>2.</span>
+            <p>Rate the submissions and provide feedback to creatives. Creatives submit even more names based on your
+              feedback.</p>
+          </article>
+          <article class="how_do_article col-12">
+            <span>3.</span>
+            <p>Our team helps you test your favorite names with your target audience. We also assist with Trademark
+              screening.</p>
+          </article>
+          <article class="how_do_article col-12">
+            <span>4.</span>
+            <p>Pick a Winner. The winner gets paid for their submission.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src="./script/index.js"></script>
 </body>

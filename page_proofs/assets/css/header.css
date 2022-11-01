@@ -1,3 +1,17 @@
+.scroll {
+  background-color: #377dff82;
+  font-size: 20px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  position: fixed;
+  color: white;
+  right: 10px;
+  bottom: 20px;
+  transition: all 0.3s;
+}
+.scroll:hover {
+  background-color: var(--color-light-blue);
+}
 .header {
   background-color: var(--color-dark-blue);
 }
