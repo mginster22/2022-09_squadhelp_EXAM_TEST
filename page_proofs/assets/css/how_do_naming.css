@@ -37,7 +37,6 @@
 .how_do_article {
   margin-bottom: 10px;
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 15px;
   border: 0.5px solid #e7eaf3;
@@ -55,19 +54,38 @@
 }
 .how_do_article::before {
   content: "";
-  width: 20px;
+  width: 30px;
   height: 1px;
   background-color: #e7eaf3;
   position: absolute;
-  left: 0;
+  left: -10px;
 }
 .how_do_wrapper_block::before {
   content: "";
   width: 1px;
   height: 490px;
-  left: 0;
+  left: -10px;
   top: 99px;
   background-color: #e7eaf3;
-
   position: absolute;
+}
+@media screen and (max-width: 1325px) {
+  .how_do_wrapper_block::before {
+    height: 545px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .how_do_inner {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .how_do_wrapper_block::before {
+    height: 440px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .how_do_wrapper_block::before {
+    height: 517px;
+  }
 }
