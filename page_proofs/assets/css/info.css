@@ -7,6 +7,40 @@
   flex-direction: column;
   gap: 20px;
 }
+.modal_video {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 10000px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal_video_active {
+  left: 0;
+}
+.modal_video_close {
+  left: 10000px;
+}
+.video {
+  transform: translate(150px, 120px);
+  margin: auto;
+}
+.close {
+  display: none;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.close_active {
+  display: block;
+}
+.iframe_video {
+  padding: 30px 20px;
+  max-height: 100vh;
+}
 .info_section_span {
   color: var(--color-light-blue);
   font-size: 11px;

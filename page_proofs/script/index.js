@@ -1,11 +1,17 @@
 const burger = document.querySelector(".burger");
 const navBar = document.querySelector(".nav_menu");
-
+const menu = document.querySelectorAll(".menuu");
 const navbars = document.querySelectorAll(".active_burger .nav_menu_item");
-const navMenuItems = document.querySelector(".nav_menu_item");
-const subNavMenuLists = document.querySelector(".sub_nav_menu_list");
+const navItems = document.querySelectorAll(".nav_menu_item");
+const navItem = document.querySelector(".nav_menu_item");
+const subNavMenuLists = document.querySelectorAll(".sub_nav_menu_list");
+const subNavMenuList = document.querySelector(".sub_nav_menu_list");
 const activeBurger = document.querySelector(".active_burger");
-console.log(navbars);
+
+const questions = document.querySelectorAll(".title_question");
+const texts = document.querySelectorAll(".text_title_question");
+console.log(questions);
+console.log(texts);
 
 burger.addEventListener("click", () => {
   if (navBar.classList.contains("nav_menu")) {
@@ -17,12 +23,56 @@ burger.addEventListener("click", () => {
   }
 });
 
-navMenuItems.addEventListener("click", () => {
-  if (subNavMenuLists.classList.contains("sub_nav_menu_list")) {
-    subNavMenuLists.classList.add("none");
-    subNavMenuLists.classList.remove("sub_nav_menu_list");
+document
+  .querySelectorAll(".nav_menu_item")
+  .forEach((el) => el.addEventListener("click", () => {}));
+
+document.querySelectorAll(".title_question").forEach((el) =>
+  el.addEventListener("click", () => {
+    let content = el.nextElementSibling;
+    console.log(content);
+    if (content.style.maxHeight) {
+      document
+        .querySelectorAll(".text_title_question")
+        .forEach((el) => (el.style.maxHeight = null));
+    } else {
+      document
+        .querySelectorAll(".text_title_question")
+        .forEach((el) => (el.style.maxHeight = null));
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  })
+);
+
+document.querySelector(".play_video_link").addEventListener("click", () => {
+  const modalVideo = document.querySelector(".modal_video");
+  const close = document.querySelector(".close");
+  close.classList.add("close_active");
+  if (modalVideo.classList.contains("modal_video")) {
+    modalVideo.classList.add("modal_video_active");
+    modalVideo.classList.remove("modal_video_close");
   } else {
-    subNavMenuLists.classList.add("sub_nav_menu_list");
-    subNavMenuLists.classList.add("none");
+    return;
   }
 });
+
+document.querySelector(".close").addEventListener("click", (event) => {
+  event.target.classList.remove("close_active");
+
+  return document
+    .querySelector(".modal_video")
+    .classList.add("modal_video_close");
+});
+
+document
+  .querySelector(".modal_video")
+  .addEventListener("mouseup", function (event) {
+    var obj = document.querySelector(".modal_video");
+    obj.classList.remove("modal_video_active");
+
+    // if (!obj.contains(event.target)) {
+    //   alert("Outside click detected!");
+    // } else {
+    //   alert("Inside click detected!");
+    // }
+  });

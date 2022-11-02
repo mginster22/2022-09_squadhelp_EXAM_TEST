@@ -73,29 +73,11 @@
     justify-content: start;
     align-items: flex-start;
   }
-
   .nav_menu_item_inner {
     justify-content: space-between;
     width: 100%;
   }
   .sub_nav_menu_list {
-    display: none;
-    flex-direction: column;
     position: static;
-    border: none;
-    box-shadow: none;
   }
-  .none {
-    display: none;
-  }
-  .active {
-    display: block;
-  }
-
-  /* .sub_nav_menu_list_burger {
-    display: flex;
-    flex-direction: column;
-    position: static;
-    margin-right: auto;
-  } */
 }
