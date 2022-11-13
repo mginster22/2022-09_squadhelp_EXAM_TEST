@@ -23,14 +23,18 @@ burger.addEventListener("click", () => {
   }
 });
 
-document
-  .querySelectorAll(".nav_menu_item")
-  .forEach((el) => el.addEventListener("click", () => {}));
-
 document.querySelectorAll(".title_question").forEach((el) =>
-  el.addEventListener("click", () => {
+  el.addEventListener("click", (e) => {
+    const arrow = e.target;
+    console.log(arrow);
     let content = el.nextElementSibling;
-    console.log(content);
+    if (arrow.classList.contains("title_question_arrow_rigth")) {
+      arrow.classList.remove("title_question_arrow_rigth");
+      arrow.classList.add("title_question_arrow_down");
+    } else {
+      arrow.classList.remove("title_question_arrow_down");
+      arrow.classList.add("title_question_arrow_rigth");
+    }
     if (content.style.maxHeight) {
       document
         .querySelectorAll(".text_title_question")

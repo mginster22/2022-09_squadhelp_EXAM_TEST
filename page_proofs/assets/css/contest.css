@@ -1,12 +1,23 @@
+.contest {
+  margin: 50px auto;
+}
 .contest_wrapper {
   display: flex;
   gap: 40px;
   justify-content: center;
 }
-
+.contest_item_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 .contest_title span {
   font-size: 2.2rem;
   color: var(--color-light-blue);
+}
+.border_bottom {
+  margin-top: 90px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.323);
 }
 .contest_link_wrapper {
   display: flex;
@@ -25,9 +36,7 @@
 .contest_link_wrapper a:hover {
   color: var(--color-white);
 }
-/* .contest_card_item {
-  border: 0.5px solid var(--color-gray);
-} */
+
 .contest_card_item {
   margin-top: 20px;
   display: flex;
@@ -39,6 +48,7 @@
   font-size: 1.2rem;
   color: #1e2022;
 }
+
 .title_question {
   display: flex;
   align-items: center;
@@ -59,13 +69,19 @@
   color: var(--color-light-blue);
   background-color: rgba(242, 238, 238, 0.481);
 }
-.title_question::after {
+
+.title_question_arrow_down::after {
+  content: "\2193";
+  font-size: 2rem;
+  color: var(--color-light-blue);
+  cursor: pointer;
+}
+.title_question_arrow_rigth::after {
   content: "\2192";
   color: var(--color-light-blue);
   font-size: 2rem;
   cursor: pointer;
 }
-
 .hidden {
   display: none;
 }
